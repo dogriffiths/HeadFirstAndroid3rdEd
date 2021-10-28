@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Guessing Game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lives_left">You have %d lives left</string>
+    <string name="incorrect_guesses">Incorrect guesses: %s</string>
+</resources>
