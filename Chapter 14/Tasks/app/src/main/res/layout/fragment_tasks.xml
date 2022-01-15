@@ -3,18 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".TasksFragment">
-
     <data>
         <variable
             name="viewModel"
             type="com.hfad.tasks.TasksViewModel" />
     </data>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
         <EditText
             android:id="@+id/task_name"
             android:layout_width="match_parent"
@@ -22,7 +19,6 @@
             android:inputType="text"
             android:hint="Enter a task name"
             android:text="@={viewModel.newTaskName}" />
-
         <Button
             android:id="@+id/save_button"
             android:layout_width="wrap_content"
@@ -30,7 +26,6 @@
             android:layout_gravity="center"
             android:text="Save Task"
             android:onClick="@{() -> viewModel.addTask()}" />
-
         <TextView
             android:id="@+id/tasks"
             android:layout_width="match_parent"
