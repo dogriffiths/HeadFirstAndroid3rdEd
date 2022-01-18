@@ -7,15 +7,16 @@ import android.widget.Button
 import android.widget.Chronometer
 
 class MainActivity : AppCompatActivity() {
-
+    companion object {
+        //Add key Strings for use with the Bundle
+        const val OFFSET_KEY = "offset"
+        const val RUNNING_KEY = "running"
+        const val BASE_KEY = "base"
+    }
+    
     lateinit var stopwatch: Chronometer  //The stopwatch
     var running = false  //Is the stopwatch running?
     var offset: Long = 0  //The base offset for the stopwatch
-
-    //Add key Strings for use with the Bundle
-    val OFFSET_KEY = "offset"
-    val RUNNING_KEY = "running"
-    val BASE_KEY = "base"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
